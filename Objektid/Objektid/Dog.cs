@@ -6,17 +6,18 @@ using System.Threading.Tasks;
 
 namespace Objektid
 {
-    class Dog
+    class Dog : Mammal
     {
         public string Name { get; set; }
-        public int Age { get; set; }
+      
         public string Color { get; set; }
         public int RealYears { get; set; }
         public Dog()
         {
             Name = "Rex";
             Age = 2;
-            Color = "Brown";            
+            Color = "Brown";
+            CalculateDogYears();
         }        
 
         public void Bark()
